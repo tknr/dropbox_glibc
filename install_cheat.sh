@@ -1,8 +1,8 @@
 #!/bin/bash
 
-gcc -Wall -fPIC -shared -o drobpoxcheat.so drobpoxcheat.c || exit 1
+gcc -Wall -fPIC -shared -o dropboxcheat.so dropboxcheat.c || exit 1
 mkdir -p /usr/local/lib64
-cp drobpoxcheat.so /usr/local/lib64/
+cp -f dropboxcheat.so /usr/local/lib64/
 
 mkdir -p ~/bin
 ln -s `pwd`/dropbox_daemon ~/bin/
