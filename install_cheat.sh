@@ -5,7 +5,7 @@ mkdir -p /usr/local/lib64
 cp -f dropboxcheat.so /usr/local/lib64/
 
 mkdir -p ~/bin
-ln -s `pwd`/dropbox_daemon ~/bin/
+cp -f `pwd`/dropbox_daemon ~/bin/
 
 export_count=`cat ~/.bash_profile | grep 'export PATH="$HOME/bin:$PATH"' | wc -l`
 echo $export_count
